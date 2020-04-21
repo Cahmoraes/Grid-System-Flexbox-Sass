@@ -1,0 +1,22 @@
+{
+  "name": "grid-system-flexbox-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm:watch-*\"",
+    "watch-sass": "sass --watch app/scss:dist/css",
+    "watch-bs": "browser-sync start --config bs-config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "concurrently": "^5.1.0"
+  }
+}

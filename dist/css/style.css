@@ -1,0 +1,114 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-1 {
+  flex: 0 0 calc(8.3333333333% - 20px);
+  max-width: calc(8.3333333333% - 20px);
+}
+
+.grid-2 {
+  flex: 0 0 calc(16.6666666667% - 20px);
+  max-width: calc(16.6666666667% - 20px);
+}
+
+.grid-3 {
+  flex: 0 0 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+}
+
+.grid-4 {
+  flex: 0 0 calc(33.3333333333% - 20px);
+  max-width: calc(33.3333333333% - 20px);
+}
+
+.grid-5 {
+  flex: 0 0 calc(41.6666666667% - 20px);
+  max-width: calc(41.6666666667% - 20px);
+}
+
+.grid-6 {
+  flex: 0 0 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+}
+
+.grid-7 {
+  flex: 0 0 calc(58.3333333333% - 20px);
+  max-width: calc(58.3333333333% - 20px);
+}
+
+.grid-8 {
+  flex: 0 0 calc(66.6666666667% - 20px);
+  max-width: calc(66.6666666667% - 20px);
+}
+
+.grid-9 {
+  flex: 0 0 calc(75% - 20px);
+  max-width: calc(75% - 20px);
+}
+
+.grid-10 {
+  flex: 0 0 calc(83.3333333333% - 20px);
+  max-width: calc(83.3333333333% - 20px);
+}
+
+.grid-11 {
+  flex: 0 0 calc(91.6666666667% - 20px);
+  max-width: calc(91.6666666667% - 20px);
+}
+
+.grid-12 {
+  flex: 0 0 calc(100% - 20px);
+  max-width: calc(100% - 20px);
+}
+
+[class^=grid-] {
+  margin-left: 10px;
+  margin-right: 10px;
+  min-height: 1px;
+  display: block;
+  align-self: flex-start;
+}
+@media only screen and (max-width: 759px) {
+  [class^=grid-] {
+    flex: 1 1 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    align-self: auto;
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 759px) {
+  .container {
+    max-width: 480px;
+    flex-direction: column;
+  }
+}
+
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 759px) {
+  .row {
+    max-width: 480px;
+    flex-direction: column;
+  }
+}
+
+div {
+  background: rgba(0, 0, 0, 0.4);
+  min-height: 50px !important;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
