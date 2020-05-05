@@ -72,6 +72,7 @@ $cols: 12;
   margin-right: -$gutter / 2;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   @include d(s) {
     max-width: $s-device;
     flex-direction: column;
