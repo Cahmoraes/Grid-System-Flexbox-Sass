@@ -68,22 +68,27 @@
   margin-left: 10px;
   margin-right: 10px;
   min-height: 1px;
-  display: block;
   align-self: flex-start;
 }
 @media only screen and (max-width: 759px) {
   [class^=grid-] {
-    flex: 1 1 calc(100% - 20px);
+    flex: 0 0 calc(100% - 20px);
     max-width: calc(100% - 20px);
     align-self: auto;
   }
 }
 
 .container {
+  position: relative;
   max-width: 960px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+}
+@media only screen and (min-width: 760px) and (max-width: 959px) {
+  .container {
+    max-width: 760px;
+  }
 }
 @media only screen and (max-width: 759px) {
   .container {
@@ -97,12 +102,7 @@
   margin-right: -10px;
   display: flex;
   flex-wrap: wrap;
-}
-@media only screen and (max-width: 759px) {
-  .row {
-    max-width: 480px;
-    flex-direction: column;
-  }
+  position: relative;
 }
 
 div {
